@@ -4,7 +4,8 @@ import  exception.StudentNotFoundException;
 import  java.util.*;
 public class StudentService {
     private List<Student>studentList=new ArrayList<>();
-    StudentService(Student s){
+
+    public void addStudent(Student s) {
         studentList.add(s);
     }
     public Student findStudentById(String id) throws StudentNotFoundException {

@@ -3,10 +3,12 @@ import  java.util.*;
 public class Student extends Person {
     private String studentId;
     private HashMap<String,Double>grades=new HashMap<>();
-    Student(String name,int age,String studentId){
+
+    public Student(String name,int age,String studentId){
         super(age, name);
         this.studentId=studentId;
     }
+
     @Override
     public  String getDetails(){
         return "Student: " + name + ", Age: " + age + ", ID: " + studentId;
